@@ -1,0 +1,30 @@
+Current Version is static because:  
+
+> The current version is a front-end prototype that demonstrates the **agent orchestration workflow**, but it is not yet connected to a real AI model. It shows how the process should be structured: one agent reviews and documents the SAS code, another converts it, another optimizes it, another creates tests, and another documents the changes.
+>
+> The reason it does not fully convert every new SAS program dynamically is because the conversion logic is currently handled with local JavaScript rules and sample outputs. It can recognize certain SAS patterns, but it does not have a true language model behind it yet.
+>
+> To make it production-ready, I would connect the React front end to a secure backend, such as a Vercel serverless function, and call the OpenAI API, Azure OpenAI, or Databricks Mosaic AI. The SAS code would be sent to the backend, each agent prompt would run in sequence, and the final outputs would return to the webpage as documentation, converted code, optimization notes, test cases, and change logs.
+>
+> I would also add safeguards such as API key protection, logging, human review checkpoints, validation tests, and comparison of SAS output versus converted Databricks SQL or PySpark output.
+>
+> So the current version proves the **architecture and workflow design**, while the next version would prove the **live AI execution and automation layer**.
+
+A shorter version:
+
+> This version is a working prototype of the orchestration design, not a fully AI-powered converter yet. The agents are structured as separate workflow steps, but the conversion is still rule-based in the browser. To make it fully functional, I would connect it to a backend API and an LLM such as OpenAI, Azure OpenAI, or Databricks Mosaic AI, then have each agent run against the pasted SAS code and return real documentation, conversion, optimization, testing, and change-log outputs.
+
+Here’s an easier and more natural version you can say in an interview:
+
+> The current version shows how I would organize and automate a SAS migration process using multiple agents, but it’s not fully connected to AI yet. Right now, the webpage simulates the workflow and uses built-in logic to demonstrate each step.
+>
+> The reason it doesn’t fully work for every SAS program is because there’s no live AI engine behind it yet. To make it fully functional, I would connect the webpage to a backend and an AI model like OpenAI or Databricks. Then users could paste SAS code and the agents would automatically review it, convert it, optimize it, create tests, and document changes in real time.
+>
+> The goal of this version was to prove that I understand how to break a complex process into specialized agents and orchestrate the workflow end to end.
+
+Short version:
+
+> This version proves the workflow design and orchestration. The next step would be connecting it to an AI backend so the agents can generate real outputs dynamically.
+
+
+
